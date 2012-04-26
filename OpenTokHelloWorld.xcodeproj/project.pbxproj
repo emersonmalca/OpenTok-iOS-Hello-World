@@ -29,6 +29,16 @@
 		1FE24FCF14F71E47002929E6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE24FCD14F71E47002929E6 /* MainStoryboard_iPhone.storyboard */; };
 		1FE24FD214F71E47002929E6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE24FD014F71E47002929E6 /* MainStoryboard_iPad.storyboard */; };
 		1FE24FD514F71E47002929E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE24FD414F71E47002929E6 /* ViewController.m */; };
+		C83B0AF1154A035700BF1B06 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C83B0AEF154A035700BF1B06 /* MainViewController.m */; };
+		C83B0B05154A04A400BF1B06 /* ClothTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C83B0AF6154A04A400BF1B06 /* ClothTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C83B0B06154A04A400BF1B06 /* DoorsTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C83B0AF8154A04A400BF1B06 /* DoorsTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C83B0B07154A04A400BF1B06 /* FlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C83B0AFA154A04A400BF1B06 /* FlipTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C83B0B08154A04A400BF1B06 /* HMGLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C83B0AFC154A04A400BF1B06 /* HMGLTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C83B0B09154A04A400BF1B06 /* HMGLTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C83B0AFE154A04A400BF1B06 /* HMGLTransitionManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C83B0B0A154A04A400BF1B06 /* HMGLTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C83B0B00154A04A400BF1B06 /* HMGLTransitionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C83B0B0B154A04A400BF1B06 /* RotateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C83B0B02154A04A400BF1B06 /* RotateTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C83B0B0C154A04A400BF1B06 /* Switch3DTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C83B0B04154A04A400BF1B06 /* Switch3DTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C83B0B0E154A060000BF1B06 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C83B0B0D154A05FF00BF1B06 /* ViewController.xib */; };
 		D469B0C314FF0EE50027EB4B /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D469B0C214FF0EE50027EB4B /* Opentok.framework */; };
 		D46D3E7B14F85CD700DEDEDF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46D3E7A14F85CD700DEDEDF /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +71,25 @@
 		1FE24FD114F71E47002929E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1FE24FD314F71E47002929E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1FE24FD414F71E47002929E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C83B0AEE154A035700BF1B06 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C83B0AEF154A035700BF1B06 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C83B0AF5154A04A400BF1B06 /* ClothTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothTransition.h; sourceTree = "<group>"; };
+		C83B0AF6154A04A400BF1B06 /* ClothTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothTransition.m; sourceTree = "<group>"; };
+		C83B0AF7154A04A400BF1B06 /* DoorsTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoorsTransition.h; sourceTree = "<group>"; };
+		C83B0AF8154A04A400BF1B06 /* DoorsTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoorsTransition.m; sourceTree = "<group>"; };
+		C83B0AF9154A04A400BF1B06 /* FlipTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTransition.h; sourceTree = "<group>"; };
+		C83B0AFA154A04A400BF1B06 /* FlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTransition.m; sourceTree = "<group>"; };
+		C83B0AFB154A04A400BF1B06 /* HMGLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransition.h; sourceTree = "<group>"; };
+		C83B0AFC154A04A400BF1B06 /* HMGLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransition.m; sourceTree = "<group>"; };
+		C83B0AFD154A04A400BF1B06 /* HMGLTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransitionManager.h; sourceTree = "<group>"; };
+		C83B0AFE154A04A400BF1B06 /* HMGLTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransitionManager.m; sourceTree = "<group>"; };
+		C83B0AFF154A04A400BF1B06 /* HMGLTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransitionView.h; sourceTree = "<group>"; };
+		C83B0B00154A04A400BF1B06 /* HMGLTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransitionView.m; sourceTree = "<group>"; };
+		C83B0B01154A04A400BF1B06 /* RotateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateTransition.h; sourceTree = "<group>"; };
+		C83B0B02154A04A400BF1B06 /* RotateTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateTransition.m; sourceTree = "<group>"; };
+		C83B0B03154A04A400BF1B06 /* Switch3DTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Switch3DTransition.h; sourceTree = "<group>"; };
+		C83B0B04154A04A400BF1B06 /* Switch3DTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Switch3DTransition.m; sourceTree = "<group>"; };
+		C83B0B0D154A05FF00BF1B06 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		D469B0C214FF0EE50027EB4B /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Opentok.framework; sourceTree = "<group>"; };
 		D46D3E7A14F85CD700DEDEDF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -139,13 +168,17 @@
 		1FE24FC114F71E47002929E6 /* OpenTokHelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				C83B0AF4154A049400BF1B06 /* HGML Transitions */,
 				1FE24FCA14F71E47002929E6 /* AppDelegate.h */,
 				1FE24FCB14F71E47002929E6 /* AppDelegate.m */,
 				1FE24FCD14F71E47002929E6 /* MainStoryboard_iPhone.storyboard */,
 				1FE24FD014F71E47002929E6 /* MainStoryboard_iPad.storyboard */,
 				1FE24FD314F71E47002929E6 /* ViewController.h */,
 				1FE24FD414F71E47002929E6 /* ViewController.m */,
+				C83B0B0D154A05FF00BF1B06 /* ViewController.xib */,
 				1FE24FC214F71E47002929E6 /* Supporting Files */,
+				C83B0AEE154A035700BF1B06 /* MainViewController.h */,
+				C83B0AEF154A035700BF1B06 /* MainViewController.m */,
 			);
 			path = OpenTokHelloWorld;
 			sourceTree = "<group>";
@@ -159,6 +192,29 @@
 				1FE24FC914F71E47002929E6 /* OpenTokHelloWorld-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C83B0AF4154A049400BF1B06 /* HGML Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				C83B0AF5154A04A400BF1B06 /* ClothTransition.h */,
+				C83B0AF6154A04A400BF1B06 /* ClothTransition.m */,
+				C83B0AF7154A04A400BF1B06 /* DoorsTransition.h */,
+				C83B0AF8154A04A400BF1B06 /* DoorsTransition.m */,
+				C83B0AF9154A04A400BF1B06 /* FlipTransition.h */,
+				C83B0AFA154A04A400BF1B06 /* FlipTransition.m */,
+				C83B0AFB154A04A400BF1B06 /* HMGLTransition.h */,
+				C83B0AFC154A04A400BF1B06 /* HMGLTransition.m */,
+				C83B0AFD154A04A400BF1B06 /* HMGLTransitionManager.h */,
+				C83B0AFE154A04A400BF1B06 /* HMGLTransitionManager.m */,
+				C83B0AFF154A04A400BF1B06 /* HMGLTransitionView.h */,
+				C83B0B00154A04A400BF1B06 /* HMGLTransitionView.m */,
+				C83B0B01154A04A400BF1B06 /* RotateTransition.h */,
+				C83B0B02154A04A400BF1B06 /* RotateTransition.m */,
+				C83B0B03154A04A400BF1B06 /* Switch3DTransition.h */,
+				C83B0B04154A04A400BF1B06 /* Switch3DTransition.m */,
+			);
+			name = "HGML Transitions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +270,7 @@
 				1FE24FC614F71E47002929E6 /* InfoPlist.strings in Resources */,
 				1FE24FCF14F71E47002929E6 /* MainStoryboard_iPhone.storyboard in Resources */,
 				1FE24FD214F71E47002929E6 /* MainStoryboard_iPad.storyboard in Resources */,
+				C83B0B0E154A060000BF1B06 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +284,15 @@
 				1FE24FC814F71E47002929E6 /* main.m in Sources */,
 				1FE24FCC14F71E47002929E6 /* AppDelegate.m in Sources */,
 				1FE24FD514F71E47002929E6 /* ViewController.m in Sources */,
+				C83B0AF1154A035700BF1B06 /* MainViewController.m in Sources */,
+				C83B0B05154A04A400BF1B06 /* ClothTransition.m in Sources */,
+				C83B0B06154A04A400BF1B06 /* DoorsTransition.m in Sources */,
+				C83B0B07154A04A400BF1B06 /* FlipTransition.m in Sources */,
+				C83B0B08154A04A400BF1B06 /* HMGLTransition.m in Sources */,
+				C83B0B09154A04A400BF1B06 /* HMGLTransitionManager.m in Sources */,
+				C83B0B0A154A04A400BF1B06 /* HMGLTransitionView.m in Sources */,
+				C83B0B0B154A04A400BF1B06 /* RotateTransition.m in Sources */,
+				C83B0B0C154A04A400BF1B06 /* Switch3DTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

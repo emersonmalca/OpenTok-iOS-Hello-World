@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "HMGLTransitionManager.h"
+#import "DoorsTransition.h"
 @implementation ViewController {
     OTSession* _session;
     OTPublisher* _publisher;
@@ -22,6 +23,17 @@ static NSString* const kSessionId = @"1sdemo00855f8290f8efa648d9347d718f7e06fd";
                                 // go to http://staging.tokbox.com/opentok/api/tools/js/tutorials/helloworld.html
                                 // For a unique API key, go to http://staging.tokbox.com/hl/session/create
 static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to streams other than your own.
+
+- (IBAction)close:(id)sender {
+    if (_session) {
+        [_session disconnect];
+    }
+    
+    DoorsTransition *t = [[DoorsTransition alloc] init];
+    t.transitionType = DoorsTransitionTypeClose;
+    [[HMGLTransitionManager sharedTransitionManager] setTransition:t];
+    [[HMGLTransitionManager sharedTransitionManager] dismissModalViewController:self];
+}
 
 #pragma mark - View lifecycle
 
@@ -65,9 +77,11 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to s
 {
     _publisher = [[OTPublisher alloc] initWithDelegate:self];
     [_publisher setName:[[UIDevice currentDevice] name]];
+    [_publisher setPublishVideo:NO];
+    [_publisher setPublishAudio:YES];
     [_session publish:_publisher];
-    [self.view addSubview:_publisher.view];
-    [_publisher.view setFrame:CGRectMake(0, 0, widgetWidth, widgetHeight)];
+    //[self.view addSubview:_publisher.view];
+    //[_publisher.view setFrame:CGRectMake(0, 0, widgetWidth, widgetHeight)];
 }
 
 - (void)sessionDidConnect:(OTSession*)session
@@ -114,8 +128,14 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to s
 - (void)subscriberDidConnectToStream:(OTSubscriber*)subscriber
 {
     NSLog(@"subscriberDidConnectToStream (%@)", subscriber.stream.connection.connectionId);
-    [subscriber.view setFrame:CGRectMake(0, widgetHeight, widgetWidth, widgetHeight)];
-    [self.view addSubview:subscriber.view];
+    //[subscriber.view setFrame:CGRectMake(0, widgetHeight, widgetWidth, widgetHeight)];
+    //[self.view addSubview:subscriber.view];
+}
+
+- (void)publisherDidStartStreaming:(OTPublisher *)publisher {
+    NSLog(@"publisherDidStartStreaming: %@", publisher);
+    NSLog(@"- publisher.session: %@", publisher.session.sessionId);
+    NSLog(@"- publisher.name: %@", publisher.name);
 }
 
 - (void)publisher:(OTPublisher*)publisher didFailWithError:(NSError*) error {

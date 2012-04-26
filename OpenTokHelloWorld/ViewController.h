@@ -13,4 +13,6 @@
 - (void)doConnect;
 - (void)doPublish;
 - (void)showAlert:(NSString*)string;
+
+- (IBAction)close:(id)sender;
 @end
